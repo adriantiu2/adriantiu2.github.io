@@ -13,6 +13,7 @@ function bigImg(x) {
   }
   else{
   	x.style.height = "540px"
+  	x.style.width = "auto"
   	x.style.top = "0px"
   	x.style.left = "0px"
   	var filename = x.src.match("[^.]+$")[0].toUpperCase()
@@ -20,7 +21,7 @@ function bigImg(x) {
   	var size = getFileSize(x.naturalWidth*x.naturalHeight)
   	var back = document.createElement('button')
   	back.innerHTML = "back"
-  	back.style.marginTop = (x.clientHeight-back.style.height)+"px"
+  	// back.style.marginTop = (x.clientHeight-back.style.height)+"px"
   	document.getElementById('main').appendChild(back);
   	back.addEventListener ("click", function() {
 	  location.reload()
