@@ -14,14 +14,16 @@ function bigImg(x) {
   else{
   	x.style.height = "540px"
   	x.style.width = "auto"
-  	x.style.top = "0px"
-  	x.style.left = "0px"
+  	x.style.marginTop = "21px";
+  	x.style.left = "10px"
   	var filename = x.src.match("[^.]+$")[0].toUpperCase()
   	var title = x.src.match("([^\/]+$)")[0].match("^[^.]*")[0]
   	var size = getFileSize(x.naturalWidth*x.naturalHeight)
   	var back = document.createElement('button')
   	back.innerHTML = "back"
-  	// back.style.marginTop = (x.clientHeight-back.style.height)+"px"
+  	back.style.position = "absolute";
+  	back.style.top = "8px";
+  	back.style.left = "8px";
   	document.getElementById('main').appendChild(back);
   	back.addEventListener ("click", function() {
 	  location.reload()
