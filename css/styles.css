@@ -16,8 +16,8 @@
 
 /* Modal Content */
 .modal-content {
-  margin: auto;
-  padding: 20px;
+  margin-left: 400px;
+  margin-top: -70px;
   width: 80%;
 }
 
@@ -36,6 +36,38 @@ img {
   height: 400px;
 }
 
+#random-image {
+  z-index: -100;
+  float: right;
+  margin-left: 10px;
+}
+
+#menu-btn {
+  display: none;
+}
+
+#content {
+ position: relative;
+  z-index: 0;
+  margin-top:0;
+}
+
+#links {
+font-family: arial;
+  top: 0;
+  left: 5;
+  width: 100%;
+  background-color: none;
+}
+
+#generate-image-button {
+  display: block;
+}
+
+#image-container {
+  order: 2;
+}
+
 @media only screen and (max-width: 720px) {
   img {
     float: left;
@@ -43,4 +75,36 @@ img {
     height:  auto;
     object-fit: cover;
   }
+    #menu-btn {
+    display: block;
+  }
+
+    #content {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+ #links.show {
+  max-width: 97%;
+    position: absolute;
+    margin-top: 29.5px;
+    display: block;
+    background-color: white;
+  }
+  #links {
+    display: none;
+  }
+
+  #generate-image-button {
+    display: block;
+  }
+
+  #image-container {
+    order: 1;
+  }
+
+  #generate-image-button {
+    display: block;
+  }
 }
+
