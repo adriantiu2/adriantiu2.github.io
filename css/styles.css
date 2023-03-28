@@ -75,9 +75,6 @@ font-family: arial;
     height:  auto;
     object-fit: cover;
   }
-  button{
-    font-size: 13px;
-  }
     #menu-btn {
     display: block;
   }
