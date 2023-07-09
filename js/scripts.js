@@ -59,3 +59,47 @@ menuBtn.addEventListener("click", function() {
   links.classList.toggle("show");
 });
 
+
+// BUTTONS/TAGS SCRIPT BELOW
+
+document.addEventListener('DOMContentLoaded', function() {
+// Get references to the buttons and hyperlinks
+const tagButtons = document.querySelectorAll('.tagButton');
+const hyperlinks = document.querySelectorAll('.hyperlink');
+
+// Add event listener to each button
+tagButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const selectedTag = button.getAttribute('data-tag');
+
+    // Toggle the active state of the button
+    button.classList.toggle('active');
+
+    // Show/hide hyperlinks based on the selected tag
+    hyperlinks.forEach(link => {
+      const tags = link.getAttribute('data-tags');
+
+      if (selectedTag === 'all') {
+        link.style.display = 'block'; // Show all hyperlinks
+      } else if (tags && tags.includes(selectedTag)) {
+        link.style.display = 'block'; // Show the hyperlink
+      } else {
+        link.style.display = 'none'; // Hide the hyperlink
+      }
+    });
+  });
+});
+});
+
+function loadPage(url) {
+            if (window.innerWidth < 720) {
+                // Redirect to the page directly if window size is less than 720px
+                window.location.href = url;
+            } else {
+                // Load the page in the iframe if window size is 720px or greater
+                document.getElementById("iframe").src = url;
+            }
+}
+
+
+

@@ -8,14 +8,14 @@ function bigImg(x) {
 	  	allImages[i].parentNode.removeChild(allImages[i]);
 	  }
 	}
-  if(already == "540px"){
+  if(already == "100%"){
 	location.reload();
   }
   else{
-  	x.style.height = "540px"
-  	x.style.width = "auto"
-  	x.style.marginTop = "21px";
-  	x.style.left = "10px"
+  	x.style.height = "auto"
+  	x.style.width = "100%"
+  	x.style.marginTop = "30px";
+  	// x.style.left = "10px"
   	var filename = x.src.match("[^.]+$")[0].toUpperCase()
   	var title = x.src.match("([^\/]+$)")[0].match("^[^.]*")[0]
   	var size = getFileSize(x.naturalWidth*x.naturalHeight)
