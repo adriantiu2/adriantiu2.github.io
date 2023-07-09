@@ -11,56 +11,71 @@
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 <body>
+<div class="subbody">
   <div id="content">
   <button id="menu-btn">Menu</button>
   <button id="generate-image-button">Random Project</button>
+  <div class="intro">
+    <table >
+      <tr>
+          <th>adriantiu2@gmail.com</th>
+          <th><a href="https://www.instagram.com/ayjrian.tiu/">instagram</a></th>
+          <th>RISD'22</th>
+          </code>
+        </tr>
+        </table>
+  </div>
 	<div id="image-container">
       <img id="random-image" src="#" alt="Random image">
     </div>
   </div>
+<div id="tags">
+  <button class="tagButton" data-tag="">All</button>
+  <button class="tagButton" data-tag="design">Design</button>
+  <button class="tagButton" data-tag="environment design">Environment Design</button>
+  <button class="tagButton" data-tag="editorial">Editorial Design</button>
+  <button class="tagButton" data-tag="motion design">Motion Design</button>
+  <button class="tagButton" data-tag="web design">Web Design</button>
+  <button class="tagButton" data-tag="merch">Merch Design</button>
+  <button class="tagButton" data-tag="record covers">Record Covers</button>
+  <button class="tagButton" data-tag="digital art">Digital Art</button>
+  <button class="tagButton" data-tag="fine art">Fine Art</button>
+</div>
   
 <!-- Trigger/Open The Modal -->
 <div id="links">
-<p><a id="dataarchives" href="./pages/dataarchives.html">DATA Archives Miami</a></p>
-<p><a id="tainydata" href="./pages/tainydata.html">Tainy - DATA</a></p>
-<p><a id="superstarsonly4" href="./pages/superstarsonly4.html">Superstars Only Mag 4</a></p>
-<p><a id="tobinschoolproject" href="./pages/tobinschoolproject.html">Tobin School Project</a></p>
-<p><a id="full_court_press" href="./pages/fullcourtpress.html">Full Court Press</a></p>
-<p><a id="lasolar" href="./pages/lasolar.html">Solar Festival</a></p>
-<p><a id="dynasty" href="./pages/dynasty.html">Dynasty - Jimmy Kimmel</a></p>
-<p><a id="lafirma" href="./pages/lafirma.html">La Firma - Netflix</a></p>
-<p><a id="superstarsonly" href="./pages/superstarsonly.html">Superstars Only Mag 3</a></p>
-<p><a id="capsul" href="./pages/capsul.html">Capsul Studio</a></p>
-<p><a id="anodetorelief" href="./pages/anodetorelief.html">An Ode to Relief</a></p>
-<p><a id="ktoe" href="./pages/ktoe.html">KTOE</a></p>
-<p><a id="dither_nba" href="./pages/dithernba.html">dither.nba</a></p>
-<p><a id="blank_traveler" href="./pages/blanktraveler.html">Tbtraveler</a></p>
-<p><a id="kumasi_interview" href="./pages/kumasiinterview.html">Kumasi Sadiki Interview</a></p>
-<p><a id="theo_martins" href="./pages/theomartins.html">Theo Martins</a></p>
-<p><a id="painting_misc" href="./pages/paintingmisc.html">Painting Misc.</a></p>
-<p><a id="bbal_scans" href="./pages/bbalscans.html">NBA Studies</a></p>
-<p><a id="memory_capsule_generator" href="./pages/memorycapsule.html">Memory Capsule Generator</a></p>
-<p><a id="big_boys" href="./pages/bigboys.html">Playing with the Big Boys</a></p>
-<p><a id="dolly_spartan" href="./pages/dollyspartan.html">Dolly Spartans</a></p>
-<p><a id="ds_scans" href="./pages/dsscans.html">Prints Misc.</a></p>
-<p><a id="mavi" href="./pages/mavi.html">Mavi LTST</a></p>
-    <table width="auto" border="1" cellpadding="1" cellspacing="2" bgcolor="#FFFFFF">
-      <tr>
-        <td>
-          <code>&#60;adriantiu2@gmail.com&#62;
-            <br>&#60;<a href="https://www.instagram.com/ayjrian.tiu/">instagram</a>&#62;
-<!--             <br>NYC -->
-            <br>RISD 2022
-            <br>2023
-          </code>
-        </td>
-      </tr>
-    </table>
+<p><a id="dataarchives" class="hyperlink" data-tags="design, environment design, web design, editorial" href="#" onclick="loadPage('./pages/dataarchives.html')">DATA Archives Miami</a></p>
+<p><a id="tainydata" class="hyperlink" data-tags="design, web design" onclick="loadPage('./pages/tainydata.html')" href="#">Tainy - <i>DATA</i></a></p>
+<p><a id="superstarsonly4" class="hyperlink" data-tags="design, web design, editorial" onclick="loadPage('./pages/superstarsonly4.html')" href="#">Superstars Only Mag 4</a></p>
+<p><a id="tobinschoolproject" class="hyperlink" data-tags="editorial, fine art" onclick="loadPage('./pages/tobinschoolproject.html')" href="#">Tobin School Project</a></p>
+<p><a id="full_court_press" class="hyperlink" data-tags="design, fine art, merch" onclick="loadPage('./pages/fullcourtpress.html')" href="#">Full Court Press</a></p>
+<p><a id="lasolar" class="hyperlink" data-tags="design, web design, environment design, motion design" onclick="loadPage('./pages/lasolar.html')" href="#">Solar Festival</a></p>
+<p><a id="dynasty" class="hyperlink" data-tags="design, environment design, motion design" onclick="loadPage('./pages/dynasty.html')" href="#">Dynasty - <i>Jimmy Kimmel Live!</i></a></p>
+<p><a id="lafirma" class="hyperlink" data-tags="design, environment design" onclick="loadPage('./pages/lafirma.html')" href="#">La Firma - <i>Netflix</i></a></p>
+<p><a id="superstarsonly" class="hyperlink" data-tags="design, editorial" onclick="loadPage('./pages/superstarsonly.html')" href="#">Superstars Only Mag 3</a></p>
+<p><a id="capsul" class="hyperlink" data-tags="design, web design" onclick="loadPage('./pages/capsul.html')" href="#">Capsul Studio</a></p>
+<p><a id="anodetorelief" class="hyperlink" data-tags="digital art, fine art, web design"  onclick="loadPage('./pages/anodetorelief.html')" href="#">An Ode to Relief</a></p>
+<p><a id="ktoe" class="hyperlink" data-tags="design, web design, record covers, merch" onclick="loadPage('./pages/ktoe.html')" href="#">KTOE</a></p>
+<p><a id="dither_nba" class="hyperlink" data-tags="digital art, web design, motion design" onclick="loadPage('./pages/dithernba.html')" href="#">dither.nba</a></p>
+<p><a id="blank_traveler" class="hyperlink" data-tags="digital art, fine art, merch" onclick="loadPage('./pages/blanktraveler.html')" href="#">Tbtraveler</a></p>
+<p><a id="kumasi_interview" class="hyperlink" data-tags="design, web design, editorial" onclick="loadPage('./pages/kumasiinterview.html')" href="#">Kumasi Sadiki Interview</a></p>
+<p><a id="theo_martins" class="hyperlink" data-tags="digital art, fine art, record covers" onclick="loadPage('./pages/theomartins.html')" href="#">Theo Martins</a></p>
+<p><a id="painting_misc" class="hyperlink" data-tags="fine art" onclick="loadPage('./pages/paintingmisc.html')" href="#">Painting Misc.</a></p>
+<p><a id="bbal_scans" class="hyperlink" data-tags="fine art" onclick="loadPage('./pages/bbalscans.html')" href="#">NBA Studies</a></p>
+<p><a id="memory_capsule_generator" class="hyperlink" data-tags="digital art, web design" onclick="loadPage('./pages/memorycapsule.html')" href="#">Memory Capsule Generator</a></p>
+<p><a id="big_boys" class="hyperlink" data-tags="design, editorial" onclick="loadPage('./pages/bigboys.html')" href="#">Playing with the Big Boys</a></p>
+<p><a id="dolly_spartan" class="hyperlink" data-tags="fine art, record covers" onclick="loadPage('./pages/dollyspartan.html')" href="#">Dolly Spartans</a></p>
+<p><a id="ds_scans" class="hyperlink" data-tags="digital art, fine art" onclick="loadPage('./pages/dsscans.html')" href="#">Prints Misc.</a></p>
+<p><a id="mavi" class="hyperlink" data-tags="fine art, record covers" onclick="loadPage('./pages/mavi.html')" href="#">Mavi - <i>Let the Sun Talk</i></a></p>
+</div>
+</div>
+</div>
+<div id="frame">
+  <iframe id="iframe" src=""></iframe>
+</div>
 <!-- ADD A NEW LINK HERE FOR A NEW PROJECT WITH THE ID OF THE PROJECT AND REF OF THE FORM
 <p><a id="NAME" href="./pages/HTML_FILE.html">NAME </a></p>
 -->
-</div>
-</div>
 <div id="dynasty_modal" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
