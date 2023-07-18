@@ -14,7 +14,8 @@ function bigImg(x) {
   else{
   	x.style.height = "auto"
   	x.style.width = "100%"
-  	x.style.marginTop = "25px";
+  	x.style.marginTop = "30px";
+  	x.style.paddingRight = "0px";
   	// x.style.left = "10px"
   	var filename = x.src.match("[^.]+$")[0].toUpperCase()
   	var title = x.src.match("([^\/]+$)")[0].match("^[^.]*")[0]
